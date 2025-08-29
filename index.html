@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Yoona Li — Portfolio</title>
+  <meta name="description" content="Yoona Li — CV, research, publications, and projects" />
+  <link rel="preload" href="cv.pdf" as="fetch" type="application/pdf" crossorigin>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header / top nav -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="./">Yoona Li</a>
+      <nav class="links">
+        <a href="#education">Education</a>
+        <!--
+        <a href="#awards">Awards</a>
+        <a href="#competition">Competition</a>
+      -->
+        <a href="#experience">Experience</a>
+        <!--
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        -->
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / profile -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="profile">
+        <!-- Optional headshot -->
+        <!-- <img class="avatar" src="images/photo.png" alt="Your portrait" /> -->
+        <h1>Yoona Li</h1>
+        <p class="muted">New York University</p>
+        <ul class="contact">
+          <li><a href="mailto:yl11502@nyu.edu">yl11502@nyu.edu</a></li>
+          <!-- <li><a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a></li> -->
+        </ul>
+        <div class="quick">
+          <a class="btn" href="?pdf=cv.pdf">Open CV</a>
+          <a class="btn secondary" href="cv.pdf" download>Download CV</a>
+        </div>
+      </div>
+
+      <!-- Always-open PDF viewer (defaults to cv.pdf; overridable via ?pdf=) -->
+      <div class="viewer-card">
+        <h2 class="section-title">Viewer</h2>
+        <object id="pdfObject" class="pdf-box"
+          data="cv.pdf#view=FitH&toolbar=1&navpanes=0"
+          type="application/pdf" aria-label="Embedded PDF viewer">
+          <iframe id="pdfIframe" class="pdf-box"
+            src="cv.pdf#view=FitH&toolbar=1&navpanes=0"
+            title="Embedded PDF viewer (fallback)"></iframe>
+          <p class="fallback">
+            Your browser can’t display PDFs here.
+            <a id="pdfFallbackLink" href="cv.pdf">Open the PDF</a>.
+          </p>
+        </object>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Education</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>New York University, Gallatin School of Individualized Study</h3>
+          <div class="meta">Expected Jun 2027 </div>
+        </div>
+        <ul class="bullets">
+          <li>Bachelor of Economics, Statistics</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Awards -->
+   <!--
+  <section id="awards" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Awards</h2>
+      <ul class="timeline">
+        <li><span class="time">03/2024</span> Student of the Year (Top 10 / 3000)</li>
+        <li><span class="time">11/2023</span> Provincial Government Scholarship</li>
+        <li><span class="time">05/2023</span> Smart Fiscal Competition, Winner</li>
+      </ul>
+    </div>
+  </section>
+  -->
+
+  <!-- Competition -->
+   <!--
+  <section id="competition" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Competition</h2>
+      <ul class="timeline">
+        <li><span class="time">12/2023</span> E-commerce Competition — First Prize (Team Lead)</li>
+        <li><span class="time">10/2023</span> Finance & Taxation Forum — Second Prize (First Author)</li>
+        <li><span class="time">04/2024</span> Case Management Competition — Second Prize (Team Lead)</li>
+      </ul>
+    </div>
+  </section>
+  -->
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Minsheng Securities</h3>
+          <div class="meta"><strong>Shanghai, China</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Investment Banking Intern</h4>
+          <div class="meta">Jul 2025 – Present</div>
+        </div>
+        <li>Assisted in drafting IPO prospectuses and conducted financial and market research to support regulatory submissions</li>
+        <li>Performed valuation and due diligence analysis, contributing to client presentation materials for listing projects</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>ThunderSof</h3>
+          <div class="meta"><strong>Beijing, China</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Algorithm/Data Annotation Intern</h4>
+          <div class="meta">Jun 2025 – Jul 2025</div>
+        </div>
+        <li>Optimized Xiaomi smartphone algorithms through large-scale data annotation and model fine-tuning to enhance feature performance</li>
+        <li>Conducted data analysis and collaborated with engineers to improve algorithm efficiency and accuracy</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>MTN Capital Partners</h3>
+          <div class="meta"><strong>New York, NY</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Private Equity Intern Analyst</h4>
+          <div class="meta">Nov 2023 – Present</div>
+        </div>
+        <li>Involved in an in-depth industry research project focused on environmental services and related industries; sourced 3rd party consulting market reports and distilled the key insights into a 7-page report for seniors</li>
+        <li>Analyzed an internal list of 100+ companies across various sectors and compared against the firm’s investment thesis to screen for buyout opportunities; reviewed financial metrics, size, geography and industry</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>InvestBank Corp.</h3>
+          <div class="meta"><strong>Las Vegas, NV</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Investment Banking Intern Analyst</h4>
+          <div class="meta">Aug 2023 – Nov 2023</div>
+        </div>
+        <li>Conducted a survey of the financing and sponsor activity environment in the metals and mining sector; screened 100+ sponsors active in the mining space and summarized their strategy, location and recent activity</li>
+        <li>Collected and summarized financial data, key performance indicators, and supplementary data of client companies; built an Excel-based dashboard which was used to summarize financial analyses for clients</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>LXL Capital</h3>
+          <div class="meta"><strong>New York, NY</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Investment Banking Intern Analyst</h4>
+          <div class="meta">Jul 2023 – Aug 2023</div>
+        </div>
+        <li>Participated in a potential equity financing for a sneaker brand; assisted with the preparation of a 30-page pitch deck, screened for investors with a consumer/retail focus and prepared summary profiles for the team</li>
+        <li>Conducted a research project focused on the early stage tech startup fundraising environment; utilized various business databases to compile funding histories of various startups and summarized in a report for the MD</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Blue Sky Capital Strategies</h3>
+          <div class="meta"><strong>New York, NY</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Financial Analyst Intern</h4>
+          <div class="meta">Jun 2023 – Jul 2023</div>
+        </div>
+        <li>Supported various company and industry research projects as well as deals including an equipment financing transaction; assisted with drafting transaction documents, updating financial models and other ad-hoc tasks</li>
+        <li>Worked with an Associate to prepare a business development plan for a hospital client’s potential expansion into South America; reviewed market, operational capabilities and summarized analysis in a 10-page memo</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Huatai Securities</h3>
+          <div class="meta"><strong>Wuhan, China</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Securities Intern Analyst</h4>
+          <div class="meta">Jan 2023 – Apr 2023</div>
+        </div>
+        <li>Extracted and processed data from China Securities Regulation filings; summarized the data into various charts and prepared a pitch deck which provided key insights generated from the data and presented to management</li>
+        <li>Built a KPI metrics dashboard that analyzed securities trade flow on the Huatai platform and worked with the engineering team to integrate the dashboard into a reporting system utilized by management</li>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- Leadership Experience -->
+  <section id="leadership" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Leadership Experience</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>United Nations Children’s Fund(UNICEF)</h3>
+          <div class="meta"><strong>New York, NY</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>President, New York University</h4>
+          <div class="meta">Mar 2025 – Present</div>
+        </div>
+        <li>Lead a student organization promoting entrepreneurship and international finance; organized workshops and speaker events with 150+ participants.</li>
+        <li>Expanded membership by 45% and built partnerships with local startups organizations while managing a team of 8 officers</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Smart Woman Securities</h3>
+          <div class="meta"><strong>New York, NY</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Member, Equity Research</h4>
+          <div class="meta">Dec 2023 – Present</div>
+        </div>
+        <li>Assisted with the organization of and participated in Smart Woman Securities technical programming focused on securities analyses; applied learnings by preparing a stock pitch and DCF valuation for a public company</li>
+        <li>Attended various SWS alumni events including career panels to develop an understanding of the industry</li>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Chinese Finance Club</h3>
+          <div class="meta"><strong>New York, NY</strong></div>
+        </div>
+        <div class="card-head">
+          <h4>Member, Mentorship Program</h4>
+          <div class="meta">Sep 2023 – Present</div>
+        </div>
+        <li>Participated in weekly technical and behavioral training sessions led by senior members of the club, organized and joined various networking events with corporate partners including coffee chats and speaker sessions</li>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Research -->
+   <!--
+  <section id="research" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Research</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>IoT & Blockchain for Expiring Food Management — Project Lead</h3>
+        </div>
+        <p>Designed a blockchain-based traceability network spanning upstream/downstream enterprises.</p>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>New-Energy Materials Supply/Demand Matching — Project Lead</h3>
+        </div>
+        <p>Built a matching algorithm and prototype app for the high-nickel supply chain.</p>
+      </article>
+    </div>
+  </section>
+-->
+
+  <!-- Publications -->
+   <!--
+  <section id="publications" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Publications</h2>
+      <ul class="pubs">
+        <li>
+          <strong>Accurate pricing and dynamic replenishment for vegetables via optimization.</strong>
+          <span class="meta">First author · IJIRES</span>
+          <a class="pill" href="?pdf=paper1.pdf">Open PDF</a>
+        </li>
+        <li>
+          <strong>Cycle & rate performance of lithium cobalt oxide.</strong>
+          <span class="meta">First author · JGSR</span>
+          <a class="pill" href="?pdf=paper2.pdf">Open PDF</a>
+        </li>
+        <li>
+          <strong>Price-Predicting Model: All Sailboats.</strong>
+          <span class="meta">First author · JIEM</span>
+          <a class="pill" href="?pdf=paper3.pdf">Open PDF</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+-->
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Skills & Interests</h2>
+      <div class="chips">
+        <span class="chip">Influencer on TikTok and Weibo (Vlogging; 15k+ followers across platforms)</span>
+        <span class="chip">Piano (Spinet)</span>
+        <span class="chip">Boxing (Recreational)</span>
+        <span class="chip">Photography (Exhibition)</span>
+        <span class="chip">Cooking (Chinese Traditional)</span>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects: each project is a PDF viewer-card -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <article class="viewer-card">
+        <h3 class="section-title small">Project A — Data Analysis</h3>
+        <object
+          data="Financial_Market_Colorful_Analysis_v3.pdf#view=FitH&toolbar=1&navpanes=0"
+          type="application/pdf"
+          aria-label="Project A PDF"
+          class="pdf-box"
+        >
+          <iframe
+            src="Financial_Market_Colorful_Analysis_v3.pdf#view=FitH&toolbar=1&navpanes=0"
+            title="Project A PDF (fallback)"
+            class="pdf-box"
+            loading="lazy"
+          ></iframe>
+          <p class="fallback">Your browser can’t display PDFs here.
+            <a href="Financial_Market_Colorful_Analysis_v3.pdf">Open the PDF</a>.
+          </p>
+        </object>
+        <div class="quick">
+          <a class="btn" href="?pdf=Financial_Market_Colorful_Analysis_v3.pdf">Open at top</a>
+          <a class="btn secondary" href="Financial_Market_Colorful_Analysis_v3.pdf" download>Download</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+       <!--
+      <article class="viewer-card">
+        <h3 class="section-title small">Project B — Slides</h3>
+        <object
+          data="slides.pdf#view=FitH&toolbar=1&navpanes=0"
+          type="application/pdf"
+          aria-label="Project B Slides"
+          class="pdf-box"
+        >
+          <iframe
+            src="slides.pdf#view=FitH&toolbar=1&navpanes=0"
+            title="Project B Slides (fallback)"
+            class="pdf-box"
+            loading="lazy"
+          ></iframe>
+          <p class="fallback">Your browser can’t display PDFs here.
+            <a href="slides.pdf">Open the PDF</a>.
+          </p>
+        </object>
+        <div class="quick">
+          <a class="btn" href="?pdf=slides.pdf">Open at top</a>
+          <a class="btn secondary" href="slides.pdf" download>Download</a>
+        </div>
+      </article>
+      -->
+
+      <!-- Project 3 -->
+       <!--
+      <article class="viewer-card">
+        <h3 class="section-title small">Project C — Poster</h3>
+        <object
+          data="poster.pdf#view=FitH&toolbar=1&navpanes=0"
+          type="application/pdf"
+          aria-label="Project C Poster"
+          class="pdf-box"
+        >
+          <iframe
+            src="poster.pdf#view=FitH&toolbar=1&navpanes=0"
+            title="Project C Poster (fallback)"
+            class="pdf-box"
+            loading="lazy"
+          ></iframe>
+          <p class="fallback">Your browser can’t display PDFs here.
+            <a href="poster.pdf">Open the PDF</a>.
+          </p>
+        </object>
+        <div class="quick">
+          <a class="btn" href="?pdf=poster.pdf">Open at top</a>
+          <a class="btn secondary" href="poster.pdf" download>Download</a>
+        </div>
+      </article>
+      -->
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:yl11502@nyu.edu">yl11502@nyu.edu</a></p>
+      <p>Phone: +1 (551) 554-8387</p>
+      <p>Address: 70 Washington Square South, NY, 10012</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year"></span> Yoona Li</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
